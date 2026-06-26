@@ -1,10 +1,10 @@
 # Site settings
-title: PS-TESTER (Propulsion System TESTER) Blog
-SEOTitle: 이태훈 | tthlee Blog
+title: PS-TESTER (추력계통시험장치) Blog
+SEOTitle: PSTESTER | PS-TESTER Blog
 header-img: img/home-bg.jpg
 email: thlee4biz@gmail.com
-description: "这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
+description: "PS-TESTER는 무인항공기의 추진 시스템을 특성화하고, 시험 및 설계할 수 있는 프로펠러-모터 추력 시험장치"
+keyword: "PSTESTER, 추력시험장치, 추력계통, 추력시험 시스템, 무인항공기, 드론, 추진시스템 설계, 모델링"
 url: "https://tthlee.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
