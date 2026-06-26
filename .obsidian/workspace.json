@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_doc/Manual.md",
+                "file": "_posts/2016-09-22-the-open-web.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Manual"
+              "title": "2016-09-22-the-open-web"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_doc/Manual.md",
+                "file": "_posts/2016-09-22-the-open-web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Manual 의 백링크"
+              "title": "2016-09-22-the-open-web 의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_doc/Manual.md",
+                "file": "_posts/2016-09-22-the-open-web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Manual 의 나가는 링크"
+              "title": "2016-09-22-the-open-web 의 나가는 링크"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_doc/Manual.md",
+                "file": "_posts/2016-09-22-the-open-web.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Manual 의 개요"
+              "title": "2016-09-22-the-open-web 의 개요"
             }
           }
         ]
@@ -181,11 +181,15 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "bases:새 베이스 생성하기": false,
-      "githobs:Manage a github issue": false
+      "githobs:Manage a github issue": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "3a7c45930262f078",
   "lastOpenFiles": [
+    "_posts/data_rep/2020-06-19-data-rep-int.md",
+    "_posts/2016-09-22-the-open-web.md",
+    "_doc/Manual.md",
     "README.md"
   ]
 }
