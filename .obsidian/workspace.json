@@ -92,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "img/post-bg-miui6.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "post-bg-miui6 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -183,13 +182,14 @@
   },
   "active": "5dc69c7ca511471d",
   "lastOpenFiles": [
+    "img/post-bg-miui6.jpg",
+    "conflict-files-obsidian-git.md",
     "detail/index.html",
     "detail/page-2.html",
     "detail",
     "새 폴더",
     "_includes/detail-paginator.html",
     "_posts/2021-01-19-the-systematic-failure-of-higher-education-in-china.md",
-    "img/post-bg-miui6.jpg",
     "detail.html",
     "_posts/2016-09-22-the-open-web.md",
     "img/post-bg-web.jpg",
