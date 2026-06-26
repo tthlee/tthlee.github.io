@@ -1,0 +1,98 @@
+{% comment %}
+====================================================================
+  detail-paginator.html
+  --------------------------------------------------------------------
+  HOME(index.html)의 jekyll-paginate `paginator`와 동일한 화면/동작을
+  플러그인 없이 순수 Liquid로 재현하는 수동 페이지네이션 include.
+
+  호출하는 페이지(detail/index.html, detail/page-N.html)에서
+  front matter에 `detail_page: N` (1부터 시작)을 지정하면,
+  이 include가 해당 페이지의 글 묶음과 Older/Newer 네비게이션을 그린다.
+
+  - site.paginate 값을 그대로 사용해 HOME과 페이지당 글 수를 일치시킴.
+  - 글 묶음/순서는 site.posts(최신순)를 그대로 사용해 HOME과 동일.
+====================================================================
+{% endcomment %}
+
+{% assign per_page = site.paginate | default: 10 %}
+{% assign current = include.page_num | default: 1 %}
+
+{% comment %} 전체 페이지 수 계산 (올림) {% endcomment %}
+{% assign total_posts = site.posts | size %}
+{% assign total_pages = total_posts | divided_by: per_page %}
+{% assign remainder = total_posts | modulo: per_page %}
+{% if remainder != 0 %}
+  {% assign total_pages = total_pages | plus: 1 %}
+{% endif %}
+
+{% comment %} 현재 페이지의 글 슬라이스 범위 {% endcomment %}
+{% assign offset = current | minus: 1 | times: per_page %}
+{% assign page_posts = site.posts | slice: offset, per_page %}
+
+{% comment %}
+  요청한 페이지 번호가 실제 글로 채워진 페이지 수를 초과하는 경우
+  (잉여 물리 파일에 직접 접근 시) 빈 화면 대신 안내를 보여주고
+  첫 페이지로 돌아갈 수 있게 한다.
+{% endcomment %}
+{% if current > total_pages %}
+<div class="post-preview">
+    <h2 class="post-title">No more posts</h2>
+    <div class="post-content-preview">
+        이 페이지에는 더 이상 표시할 글이 없습니다.
+        <a href="{{ site.baseurl }}/detail/">DETAIL 첫 페이지로 돌아가기 &rarr;</a>
+    </div>
+</div>
+<hr>
+{% else %}
+
+{% for post in page_posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+{% endif %}
+
+<!-- Pager (HOME과 동일한 동작) -->
+{% if total_pages > 1 %}
+<ul class="pager">
+    {% comment %} Newer Posts = 이전(작은 번호) 페이지 {% endcomment %}
+    {% if current > 1 %}
+    {% assign prev_num = current | minus: 1 %}
+    <li class="previous">
+        {% if prev_num == 1 %}
+        <a href="{{ site.baseurl }}/detail/">&larr; Newer Posts</a>
+        {% else %}
+        <a href="{{ site.baseurl }}/detail/page-{{ prev_num }}/">&larr; Newer Posts</a>
+        {% endif %}
+    </li>
+    {% endif %}
+
+    {% comment %} Older Posts = 다음(큰 번호) 페이지 {% endcomment %}
+    {% if current < total_pages %}
+    {% assign next_num = current | plus: 1 %}
+    <li class="next">
+        <a href="{{ site.baseurl }}/detail/page-{{ next_num }}/">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
