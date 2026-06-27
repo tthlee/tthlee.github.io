@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-01-05-reflection-2020.md",
+                "file": "_posts/2017-04-06-html-document.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-05-reflection-2020"
+              "title": "2017-04-06-html-document"
             }
           },
           {
@@ -198,7 +198,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 304.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,9 +215,10 @@
   },
   "active": "c1c29a42f6b27072",
   "lastOpenFiles": [
-    "Pasted image 20260627135236.png",
-    "_posts/2026-01-05-PSTESTER-소개.md",
     "_posts/2026-01-05-reflection-2020.md",
+    "_posts/2026-01-05-PSTESTER-소개.md",
+    "Pasted image 20260627155821.png",
+    "Pasted image 20260627135236.png",
     "_posts/2017-10-06-css-complaints.md",
     "2026-06-27-PSTESTER-개요.md",
     "2026-01-05-PSTESTER-Intro.md",
