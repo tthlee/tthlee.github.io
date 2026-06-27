@@ -13,10 +13,10 @@ future: true
 
 # SNS settings
 RSS: false
-# weibo_username: tthlee
-# zhihu_username: tthlee
+weibo_username: tthlee
+zhihu_username: tthlee
 github_username: tthlee
-# twitter_username: tthlee
+twitter_username: tthlee
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -93,7 +93,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "추력계통시험장치, EDAS, TC-TEMP4"
-# sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/About%20pstester.png # ABOUT ME 사진 (img/About pstester.png)
 
 # Featured Tags
 # featured-tags: false # whether or not using Feature-Tags
