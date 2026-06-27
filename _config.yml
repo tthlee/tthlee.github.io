@@ -25,6 +25,24 @@ twitter_username: tthlee
 highlighter: rouge
 permalink: pretty
 paginate: 10
+
+# Collections — 메뉴별 노트 저장소 (Obsidian에서 해당 폴더에 저장)
+collections:
+  techic:
+    output: true
+    permalink: /techic/:title/
+  about_notes:
+    output: true
+    permalink: /about/:title/
+
+# 각 컬렉션/포스트 기본값 (layout 자동 지정)
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+  - scope: { path: "", type: "techic" }
+    values: { layout: "post" }
+  - scope: { path: "", type: "about_notes" }
+    values: { layout: "post" }
 exclude:
   [
     "less",

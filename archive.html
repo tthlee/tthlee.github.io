@@ -20,7 +20,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 			<div id='tag_cloud' class="tags tags-sup js-tags">
 				<a class="tag-button--all" data-encode="">
 					Show All
-					<sup>{{site.posts.size}}</sup>
+					<sup>{{ site.posts.size | plus: site.techic.size | plus: site.about_notes.size }}</sup>
 				</a>
 
 				{% capture tags %}
@@ -38,8 +38,9 @@ https://github.com/kitian616/jekyll-TeXt-theme
 
 			<!-- Article List -->
 			<div class="mini-post-list js-result d-none">
-				{%- assign _sorted_list = site.posts -%}
-				{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
+				{%- comment -%} ARCHIVE = 모든 메뉴(posts + techic + about) 글을 연도별 색인 {%- endcomment -%}
+				{%- assign _all = site.posts | concat: site.techic | concat: site.about_notes -%}
+				{%- assign _sorted_list = _all | sort: 'date' -%}
 				{%- assign _sorted_list = _sorted_list | reverse -%}
 
 

@@ -1,8 +1,9 @@
 ---
 layout: null
 ---
+{%- assign _all = site.posts | concat: site.techic | concat: site.about_notes | sort: 'date' | reverse -%}
 [
-  {% for post in site.posts %}
+  {% for post in _all %}
     {
       "title"    : "{{ post.title | escape }}",
       "subtitle" : "{{ post.subtitle | escape }}",

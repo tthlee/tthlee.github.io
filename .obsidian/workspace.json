@@ -213,8 +213,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5dc69c7ca511471d",
+  "active": "c1c29a42f6b27072",
   "lastOpenFiles": [
+    "nav.html",
+    "techic.html",
     "_techic/2018-05-11-pwa-zh-preface.md",
     "_techic/2017-12-12-uncomputable-funcs.md",
     "_techic/2017-12-12-halting-problem.md",
@@ -243,7 +245,6 @@
     "img/post-bg-miui6.jpg",
     "detail/index.html",
     "detail/page-2.html",
-    "detail",
     "_posts/2021-01-19-the-systematic-failure-of-higher-education-in-china.md",
     "_posts/2016-09-22-the-open-web.md",
     "img/post-bg-web.jpg",

@@ -1,0 +1,49 @@
+---
+layout: page
+title: "TECHIC"
+description: "「PS-TESTER 기술 자료」"
+permalink: /techic/
+hide-in-nav: true
+---
+
+{% comment %}
+  TECHIC 메뉴 — _techic 컬렉션의 노트만 보여준다.
+  Obsidian에서 기술 자료 노트를 `_techic/` 폴더에 저장하면 여기에 분류된다.
+{% endcomment %}
+
+{% assign techic_posts = site.techic | sort: 'date' | reverse %}
+
+{% if techic_posts.size == 0 %}
+<div class="post-preview">
+    <div class="post-content-preview">
+        아직 TECHIC 노트가 없습니다. <code>_techic/</code> 폴더에 노트를 저장하면 이곳에 표시됩니다.
+    </div>
+</div>
+<hr>
+{% endif %}
+
+{% for post in techic_posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
