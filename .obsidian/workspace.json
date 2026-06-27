@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2020-07-05-reflection-2020.md",
+                "file": "_posts/2026-01-05-reflection-2020.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2020-07-05-reflection-2020"
+              "title": "2026-01-05-reflection-2020"
+            }
+          },
+          {
+            "id": "31b34fadea26b6d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2017-10-06-css-complaints.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2017-10-06-css-complaints"
+            }
+          },
+          {
+            "id": "c1c29a42f6b27072",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2026-01-05-PSTESTER-소개.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-01-05-PSTESTER-소개"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2020-07-05-reflection-2020.md",
+                "file": "_posts/2026-01-05-PSTESTER-소개.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2020-07-05-reflection-2020 의 백링크"
+              "title": "2026-01-05-PSTESTER-소개 의 백링크"
             }
           },
           {
@@ -180,11 +209,22 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "bases:새 베이스 생성하기": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "3a7c45930262f078",
+  "active": "c1c29a42f6b27072",
   "lastOpenFiles": [
+    "Pasted image 20260627135236.png",
+    "_posts/2026-01-05-PSTESTER-소개.md",
+    "_posts/2026-01-05-reflection-2020.md",
+    "_posts/2017-10-06-css-complaints.md",
+    "2026-06-27-PSTESTER-개요.md",
+    "2026-01-05-PSTESTER-Intro.md",
+    "templates/Base_Templater.md",
+    "fonts/glyphicons-halflings-regular.svg",
+    "templates",
+    "Templates",
     "_posts/2017-04-06-html-document.md",
     "conflict-files-obsidian-git.md",
     "about.html",
