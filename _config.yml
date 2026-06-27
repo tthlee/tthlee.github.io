@@ -77,7 +77,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username:   # 비활성화 (댓글 위젯 제거)
 
 # Netease settings
 netease_comment: false
