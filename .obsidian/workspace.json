@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "9a5b0e2a170c9b83",
+        "id": "2d62e3c69e3cecfb",
         "type": "tabs",
         "children": [
           {
-            "id": "3a7c45930262f078",
+            "id": "bf855d3c09fc811a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2017-04-06-html-document.md",
+                "file": "_posts/2026-01-05-PSTESTER-사용자 시스템 매뉴얼.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2017-04-06-html-document"
-            }
-          },
-          {
-            "id": "31b34fadea26b6d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2017-04-06-html-document.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2017-04-06-html-document"
+              "title": "2026-01-05-PSTESTER-사용자 시스템 매뉴얼"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2017-04-06-html-document.md",
+                "file": "_posts/2026-01-05-PSTESTER-사용자 시스템 매뉴얼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2017-04-06-html-document 의 백링크"
+              "title": "2026-01-05-PSTESTER-사용자 시스템 매뉴얼 의 백링크"
             }
           },
           {
@@ -199,12 +184,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "31b34fadea26b6d3",
+  "active": "bf855d3c09fc811a",
   "lastOpenFiles": [
+    "_posts/2020-04-03-react-hooks-vue-composition.md",
+    "_posts/2017-04-06-html-document.md",
+    "_posts/2026-01-05-PSTESTER-소개.md",
+    "_posts/무제.md",
+    "_posts/무제 2.md",
+    "_posts/무제 1.md",
+    "_posts/2026-01-05-PSTESTER-사용자 시스템 매뉴얼.md",
+    "templates/Base_Templater.md",
+    "무제.md",
+    "무제 1.md",
     "_posts/2018-09-27-avoiding-success-at-all-cost.md",
     "_posts/2017-05-28-sw-precache.md",
     "_posts/2017-07-26-farewell-flash.md",
-    "_posts/2026-01-05-PSTESTER-소개.md",
     "img/in-post/pstester 1/pstester-overview.png",
     "img/in-post/pstester 1/pstester-manager-ui.png",
     "img/in-post/pstester 1",
@@ -232,19 +226,11 @@
     "_posts/2017-10-06-css-complaints.md",
     "2026-06-27-PSTESTER-개요.md",
     "2026-01-05-PSTESTER-Intro.md",
-    "templates/Base_Templater.md",
     "fonts/glyphicons-halflings-regular.svg",
     "templates",
     "Templates",
-    "_posts/2017-04-06-html-document.md",
     "conflict-files-obsidian-git.md",
     "about.html",
-    "_posts/2021-01-19-the-systematic-failure-of-higher-education-in-china.md",
-    "_posts/2016-09-22-the-open-web.md",
-    "_posts/2021-04-10-js-20yrs-preface.md",
-    "_posts/2017-01-09-wechat-miniapp-ux.md",
-    "_posts/data_rep/2020-06-19-data-rep-int.md",
-    "_doc/Manual.md",
-    "README.md"
+    "_posts/2021-01-19-the-systematic-failure-of-higher-education-in-china.md"
   ]
 }
